@@ -1,0 +1,294 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #E8F3EC; /* light green background */
+}
+
+/*Navbar */
+header {
+  background-color: #3F7E44; /* SDG 13 green */
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* NAVBAR CONTAINER */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.8rem 1.5rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #CDE8D1; /* light hover */
+}
+
+/* Event Intro */
+.event-intro {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2E5E34; /* darker tone */
+  color: #E8F3EC;
+}
+
+.event-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-bg.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+  background-attachment: fixed;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero figure {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn {
+  display: inline-block;
+  background: #3F7E44;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #62A366;
+}
+
+/* Section Styling */
+section {
+  padding: 4rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2E5E34;
+  margin-bottom: 1.5rem;
+}
+
+section p, section li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/*  About Section */
+.about ul {
+  margin: 1rem 0 1rem 2rem;
+}
+
+/*  SDG Connection */
+.connection article {
+  background: #CDE8D1;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/*  Schedule */
+#schedule article {
+  background: #ffffff;
+  border-left: 5px solid #3F7E44;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#schedule time {
+  display: block;
+  color: #3F7E44;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+/*  Speakers */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card img {
+  width: 40%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/*  Tracks */
+.tracks ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+/*  Resources */
+.resources ul {
+  margin-top: 1rem;
+}
+
+.resources a {
+  color: #3F7E44;
+  text-decoration: none;
+}
+
+.resources a:hover {
+  text-decoration: underline;
+}
+
+/*  Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+form input, form select, form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+  outline: none;
+  border-color: #3F7E44;
+}
+
+/* Sponsors */
+.logo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.logo-grid img {
+  max-width: 150px;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-grid img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* Contact */
+.socials {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.socials a {
+  color: #2E5E34;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.socials a:hover {
+  color: #62A366;
+}
+
+/* Footer */
+footer {
+  background: #3F7E44;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/*Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+}
